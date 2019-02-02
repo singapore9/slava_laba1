@@ -12,6 +12,6 @@ public class Line implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("Line from (" + x1 + "; " + y1 + ")  to (" + x2 + "; " + y2 + ")");
+        System.out.println ("\nLine from (" + x1 + "; " + y1 + ")  to (" + x2 + "; " + y2 + ")");
     }
 }

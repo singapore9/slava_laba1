@@ -12,6 +12,6 @@ public class Rectangle implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("Rectangle (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
+        System.out.println ("\nRectangle (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
     }
 }

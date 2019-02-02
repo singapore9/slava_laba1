@@ -1,15 +1,15 @@
-public class Circle implements DrawableInterface {
-    private int x0;
-    private int y0;
-    private int r;
+public class Circle extends Oval {
+    private int radius;
 
+    // x0 and y0 -- center, r - radius
     Circle(int x0, int y0, int r) {
-        this.x0 = x0;
-        this.y0 = y0;
-        this.r = r;
+        super(x0-r, y0-r, x0+r, y0+r);
+        this.radius = r;
     }
 
+    @Override
     public void draw() {
-        System.out.println ("Circle (Center " + x0 + "; " + y0 + ") and radius " + r);
+        super.draw();
+        System.out.println("It is circle. Radius = " + radius);
     }
 }

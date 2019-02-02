@@ -14,6 +14,6 @@ public class RoundRect implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("RoundRect (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ") and radius " + r);
+        System.out.println ("\nRoundRect (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ") and radius " + r);
     }
 }
