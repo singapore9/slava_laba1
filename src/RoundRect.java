@@ -1,4 +1,4 @@
-public class RoundRect implements DrawableInterface {
+public class RoundRect extends Shape {
     private int x1;
     private int y1;
     private int x2;
@@ -14,6 +14,7 @@ public class RoundRect implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("\nRoundRect (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ") and radius " + r);
+        super.draw();
+        System.out.println ("RoundRect (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ") and radius " + r);
     }
 }

@@ -1,4 +1,4 @@
-public class Rectangle implements DrawableInterface {
+public class Rectangle extends Shape {
     private int x1;
     private int y1;
     private int x2;
@@ -12,6 +12,7 @@ public class Rectangle implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("\nRectangle (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
+        super.draw();
+        System.out.println ("Rectangle (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
     }
 }

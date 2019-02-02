@@ -1,4 +1,4 @@
-public class Oval implements DrawableInterface {
+public class Oval extends Shape {
     private int x1;
     private int y1;
     private int x2;
@@ -12,6 +12,7 @@ public class Oval implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("\nOval (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
+        super.draw();
+        System.out.println ("Oval (upper left " + x1 + "; " + y1 + " and bottom right " + x2 + "; " + y2 + ")");
     }
 }

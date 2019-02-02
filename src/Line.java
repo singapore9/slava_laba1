@@ -1,4 +1,4 @@
-public class Line implements DrawableInterface {
+public class Line extends Shape {
     private int x1;
     private int x2;
     private int y1;
@@ -12,6 +12,7 @@ public class Line implements DrawableInterface {
     }
 
     public void draw() {
-        System.out.println ("\nLine from (" + x1 + "; " + y1 + ")  to (" + x2 + "; " + y2 + ")");
+        super.draw();
+        System.out.println ("Line from (" + x1 + "; " + y1 + ")  to (" + x2 + "; " + y2 + ")");
     }
 }
