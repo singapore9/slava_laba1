@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Shapes {
     private int a = 10;
     private int b = 20;
@@ -6,16 +8,22 @@ public class Shapes {
     private int e = 5;
     public void createFigures () {
         Shape rect = new Rectangle(a, b, c, d);
-        rect.draw();
         Shape sq = new Square(a, b, c);
-        sq.draw();
         Shape line = new Line(a, b, c, d);
-        line.draw();
         Shape oval = new Oval(a, b, c, d);
-        oval.draw();
         Shape circle = new Circle(a, b, e);
-        circle.draw();
         Shape rnd = new RoundRect(a, b, c, d, e);
-        rnd.draw();
+
+        ArrayList<Shape> shapes = new ArrayList<>();
+        shapes.add(rect);
+        shapes.add(sq);
+        shapes.add(line);
+        shapes.add(oval);
+        shapes.add(circle);
+        shapes.add(rnd);
+
+        for (int i = 0; i < shapes.size(); i++) {
+            shapes.get(i).draw();
+        }
     }
 }
