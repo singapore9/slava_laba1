@@ -5,17 +5,17 @@ public class Shapes {
     private int d = 40;
     private int e = 5;
     public void createFigures () {
-        Rectangle rect = new Rectangle(a, b, c, d);
+        Shape rect = new Rectangle(a, b, c, d);
         rect.draw();
-        Square sq = new Square(a, b, c);
+        Shape sq = new Square(a, b, c);
         sq.draw();
-        Line line = new Line(a, b, c, d);
+        Shape line = new Line(a, b, c, d);
         line.draw();
-        Oval oval = new Oval(a, b, c, d);
+        Shape oval = new Oval(a, b, c, d);
         oval.draw();
-        Circle circle = new Circle(a, b, e);
+        Shape circle = new Circle(a, b, e);
         circle.draw();
-        RoundRect rnd = new RoundRect(a, b, c, d, e);
+        Shape rnd = new RoundRect(a, b, c, d, e);
         rnd.draw();
     }
 }
