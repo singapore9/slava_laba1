@@ -22,8 +22,8 @@ public class Shapes {
         shapes.add(circle);
         shapes.add(rnd);
 
-        for (int i = 0; i < shapes.size(); i++) {
-            shapes.get(i).draw();
+        for (Shape s: shapes) {
+            s.draw();
         }
     }
 }
